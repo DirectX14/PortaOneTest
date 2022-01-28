@@ -100,6 +100,12 @@ int main()
         cout << "average is " << average << endl;
         out.open("./result.txt");
         if (out.is_open()){
+            out << "min is " << min << endl;
+            out << "max is " << max << endl;
+            out << "mediana is " << mediana << endl;
+            out << "all is " << all << endl;
+            out << "average is " << average << endl;
+
             cout << "increasing sequence: ";
             out << "increasing sequence: ";
             for(int num : inc){
@@ -123,6 +129,8 @@ int main()
         cout << "Cannot open the file.";
     }
     in.close();
+
+    cin.get();
 
 
     return 0;
